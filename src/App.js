@@ -10,7 +10,7 @@ import Persik from './panels/Persik';
 const App = () => {
 	const [scheme, setScheme] = useState('bright_light')
 	const [fetchedUser, setUser] = useState(null);
-	const [popout, setPopout] = useState(<ScreenSpinner size='large' />);
+	const [popout, setPopout] = useState(null);
 	const [history, setHistory] = useState(['home']);
 	const activePanel = history[history.length - 1];
 	const isFirst = history.length === 1;
